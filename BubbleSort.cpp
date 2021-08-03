@@ -4,6 +4,9 @@
 using namespace std;
 
 int vet[5];
+int resul[5];
+int changer1;
+int changer2=0;
 
 int main(int argc, char const *argv[])
 {
@@ -15,6 +18,7 @@ int main(int argc, char const *argv[])
    for (int i = 0; i < 5; i++)
    {
        cin >> vet[i];
+       resul[i] = vet[i];
    }
    
     cout << "Your vector is: " << endl;
@@ -33,16 +37,57 @@ int main(int argc, char const *argv[])
        }
             
    }
-
+    
    /*Bubble Sort*/
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < 4; i++)
     {
-        if (vet[i] > vet[i+1])
+        if (/*vet[i] !=5 &&*/ vet[i] > vet[i+1])
         {
-            cout << endl <<"changer" << endl;
+            cout << endl <<"changer" << i << endl;
+            changer2 = vet[i];
+            vet[i] = vet[i+1];
+            vet[i+1] = changer2;
+            
+            /*vet[i] = changer2[1];
+            vet[i+1] = vet[i];*/
+
+            cout << vet[i] << " " <<  changer2 << endl;
+
+            //write array
+            for (int i = 0; i < 5; i++){
+            if (i == 0)
+            {
+                cout << "[" << vet[i] << ", ";
+            }else
+            if (i == 4)
+            {
+                cout << vet[i] << " ]";
+            }else{
+                cout << vet[i] <<", ";
+            }
+                    
+        }//end
+
         }
         
     }
+
+    cout << "your array organized is :" << endl; 
+
+    for (int i = 0; i < 5; i++)
+   {
+       if (i == 0)
+       {
+           cout << "[" << vet[i] << ", ";
+       }else
+       if (i == 4)
+       {
+           cout << vet[i] << " ]";
+       }else{
+           cout << vet[i] <<", ";
+       }
+            
+   }
     
 
 
