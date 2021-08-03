@@ -72,6 +72,114 @@ int main(int argc, char const *argv[])
         
     }
 
+    //2
+
+       /*Bubble Sort*/
+    for (int i = 0; i < 4; i++)
+    {
+        if (/*vet[i] !=5 &&*/ vet[i] > vet[i+1])
+        {
+            cout << endl <<"changer" << i << endl;
+            changer2 = vet[i];
+            vet[i] = vet[i+1];
+            vet[i+1] = changer2;
+            
+            /*vet[i] = changer2[1];
+            vet[i+1] = vet[i];*/
+
+            cout << vet[i] << " " <<  changer2 << endl;
+
+            //write array
+            for (int i = 0; i < 5; i++){
+            if (i == 0)
+            {
+                cout << "[" << vet[i] << ", ";
+            }else
+            if (i == 4)
+            {
+                cout << vet[i] << " ]";
+            }else{
+                cout << vet[i] <<", ";
+            }
+                    
+        }//end
+
+        }
+        
+    }
+
+    //3
+
+       /*Bubble Sort*/
+    for (int i = 0; i < 4; i++)
+    {
+        if (/*vet[i] !=5 &&*/ vet[i] > vet[i+1])
+        {
+            cout << endl <<"changer" << i << endl;
+            changer2 = vet[i];
+            vet[i] = vet[i+1];
+            vet[i+1] = changer2;
+            
+            /*vet[i] = changer2[1];
+            vet[i+1] = vet[i];*/
+
+            cout << vet[i] << " " <<  changer2 << endl;
+
+            //write array
+            for (int i = 0; i < 5; i++){
+            if (i == 0)
+            {
+                cout << "[" << vet[i] << ", ";
+            }else
+            if (i == 4)
+            {
+                cout << vet[i] << " ]";
+            }else{
+                cout << vet[i] <<", ";
+            }
+                    
+        }//end
+
+        }
+        
+    }
+
+    //4
+
+       /*Bubble Sort*/
+    for (int i = 0; i < 4; i++)
+    {
+        if (/*vet[i] !=5 &&*/ vet[i] > vet[i+1])
+        {
+            cout << endl <<"changer" << i << endl;
+            changer2 = vet[i];
+            vet[i] = vet[i+1];
+            vet[i+1] = changer2;
+            
+            /*vet[i] = changer2[1];
+            vet[i+1] = vet[i];*/
+
+            cout << vet[i] << " " <<  changer2 << endl;
+
+            //write array
+            for (int i = 0; i < 5; i++){
+            if (i == 0)
+            {
+                cout << "[" << vet[i] << ", ";
+            }else
+            if (i == 4)
+            {
+                cout << vet[i] << " ]";
+            }else{
+                cout << vet[i] <<", ";
+            }
+                    
+        }//end
+
+        }
+        
+    }
+
     cout << "your array organized is :" << endl; 
 
     for (int i = 0; i < 5; i++)
